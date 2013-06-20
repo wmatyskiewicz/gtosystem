@@ -15,9 +15,6 @@ setup(
     platforms = ['any'],
     license = 'Apache Software License v2.0',
     packages = find_packages('project'),
-    install_requires = [
-            'django>=1.5.1',
-    ],
     classifiers=[
         "Development Status :: 3 - Alpha",
     ],
