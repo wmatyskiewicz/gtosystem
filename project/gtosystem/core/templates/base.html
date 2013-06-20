@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% if page_title %} {{ page_title }} | {% endif %} GTO System</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="SSQ IT Solutions">
+</head>
+    <body>
+        <div id="layout">
+            {% include "layout_mainmenu.html" with mainmenu_items=mainmenu_items %}
+            <div class="container-fluid">
+                {% block content %}{% endblock %}
+                {% include "layout_footer.html" with footer_items=footer_items %}
+            </div>
+        </div>
+    </body>
+</html>
