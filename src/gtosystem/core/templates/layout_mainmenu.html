@@ -1,0 +1,8 @@
+<div class="navbar">
+    <a class="navbar-brand" href="#">GTO SYSTEM</a>
+    <ul class="nav navbar-nav">
+        {% for mainmenu in mainmenu_items %}
+        <li><a href="{{ mainmenu.url }}">{{ mainmenu.link_name }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
