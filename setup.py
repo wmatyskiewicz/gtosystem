@@ -14,8 +14,13 @@ setup(
     keywords = '',
     platforms = ['any'],
     license = 'Apache Software License v2.0',
-    packages = find_packages('project'),
+    packages = find_packages('src'),
     classifiers=[
         "Development Status :: 3 - Alpha",
     ],
+    entry_points={
+        'console_scripts': [
+            'gtosystem = gtosystem.__main__:main',
+        ],
+    },
 )
